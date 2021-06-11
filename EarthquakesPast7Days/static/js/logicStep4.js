@@ -106,8 +106,8 @@ style: styleInfo,
   // We create a popup for each circleMarker to display the magnitude and
   //  location of the earthquake after the marker has been created and styled.
   onEachFeature: function(feature, layer) {
-  layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
-}
+    layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
+  }
 }).addTo(mapearthquakes);
 // Then we add the earthquake layer to our map.
   earthquakes.addTo(map);
